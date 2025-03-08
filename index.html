@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Site de Tourisme</title>
+</head>
+<body>
+
+    <h2>Inscription - Voyage et Tourisme</h2>
+
+    <form action="traitement.php" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+        <br><br>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+        <br><br>
+
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required>
+        <br><br>
+
+        <label for="destination">Destination préférée :</label>
+        <select id="destination" name="destination">
+            <option value="paris">Paris, France</option>
+            <option value="new-york">New York, USA</option>
+            <option value="tokyo">Tokyo, Japon</option>
+            <option value="dubai">Dubaï, Émirats Arabes Unis</option>
+            <option value="bali">Bali, Indonésie</option>
+        </select>
+        <br><br>
+
+        <label for="message">Pourquoi souhaitez-vous voyager ?</label>
+        <br>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <br><br>
+
+        <label>
+            <input type="checkbox" name="newsletter" value="oui"> S'abonner à notre newsletter
+        </label>
+        <br><br>
+
+        <button type="submit">S'inscrire</button>
+    </form>
+
+</body>
+</html>
